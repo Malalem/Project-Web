@@ -15,11 +15,12 @@
         <nav>
             <ul>
                 <a href=""></a>
-                <li id="menu" class="active"><a href="./MainPage.html" id="active-menu">Home</a></li>
-                <li id="menu" class="active"><a href="" id="active-menu">More Information</a></li> 
-                <li id="menu" class="active"><a href="./Booking.html" id="active-menu">Book your trip now!</a></li>
+                <li id="" class="active"><a href="./MainPage.html" id="active-menu">Home</a></li>
+                <li id="" class="active"><a href="info" id="active-menu">More Information</a></li> 
+                <li id="" class="active"><a href="./Booking.html" id="active-menu">Book your trip now!</a></li>
                 <li><a id="contact" href="ex4-contact.html">Contact Us</a></li>
-                <li id="menu" class="active"><a href="http://riyadhmetro.sa/en/" id="active-menu">Official Website</a></li>
+                <li id="" class="active"><a href="http://riyadhmetro.sa/en/" id="active-menu">Official Website</a></li>
+                <li><button id="theme" class="theme" onclick="changeTheme()">Switch Theme</p></li>
             </ul>
         </nav>
     </header>
@@ -63,4 +64,9 @@
         </form>
     </div>
 </body>
+<script>
+    function changeTheme() {
+        document.body.classList.toggle('Dark');
+    }
+</script>
 </html>

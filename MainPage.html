@@ -15,20 +15,50 @@
         <nav>
             <ul>
                 <a href=""></a>
-                <li id="menu" class="active"><a href="" id="active-menu">Menu</a></li>
-                <li id="menu" class="active"><a href="" id="active-menu">More Information</a></li> 
-                <li id="menu" class="active"><a href="./Booking.html" id="active-menu">Book your trip now!</a></li>
+                <li id="" class="active"><a href="" id="active-menu">Home</a></li>
+                <li id="" class="active"><a href="#info" id="active-menu">More Information</a></li> 
+                <li id="" class="active"><a href="./Booking.html" id="active-menu">Book your trip now!</a></li>
                 <li><a id="contact" href="ex4-contact.html">Contact Us</a></li>
-                <li id="menu" class="active"><a href="http://riyadhmetro.sa/en/" id="active-menu">Official Website</a></li>
+                <li id="" class="active"><a href="http://riyadhmetro.sa/en/" id="active-menu">Official Website</a></li>
+                <li><button id="theme" class="theme" onclick="changeTheme()">Switch Theme</p></li>
             </ul>
         </nav>
     </header>
-    <div id="info">
-        <h1>Project Information</h1>
-        <embed style="height: 400px; width: 700;" src="./pdfs/Info1.pdf" type="">
+    <div id="login">
+        <form action="">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input name="Username" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input name="Password" type="password"></td>
+                </tr>
+            </table>
+        </form>
+    </div id="info">
+    <div class="PDFcontainer">
+        <div class="containerChild" id="info">
+            <h1>Project Information</h1>
+            <embed style="height: 400px; width: 700;" src="./pdfs/Info1.pdf" type="">
+        </div>
+        <div class="containerChild" id="info">
+            <h1>Routes</h1>
+            <embed style="height: 400px; width: 700;" src="./pdfs/Riyadh-Buses-lines-map.pdf" type="">
+        </div>
+        <div class="containerChild" id="info">
+            <h1>Project Phases</h1>
+            <embed style="height: 400px; width: 700;" src="./pdfs/Dev Phases.pdf" type="">
+        </div>
     </div>
     <footer>
-
+        <img src="./projectImages/header.jpg" alt="">
     </footer>
 </body>
+<script>
+    function changeTheme() {
+        document.body.classList.toggle('Dark');
+    }
+</script>
 </html>

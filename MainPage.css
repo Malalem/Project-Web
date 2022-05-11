@@ -5,6 +5,18 @@ header{
     position: relative;
     align-items: center;
 }
+footer{
+  position: relative;
+  align-items: center;
+}
+.PDFcontainer{
+  display: flex;
+}
+.containerChild{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
 ul li {
     position: relative;
     float: left;
@@ -27,11 +39,17 @@ ul li {
     padding: 14px;
     text-decoration: none;
   }
-  
+#login{
+  position: relative;
+  align-items: center;
+}
 
+body.Dark{
+  background-color: rgb(144, 238, 149);
+}
   
  
-  .active {
+.active {
     background-color: green;
   }
   
